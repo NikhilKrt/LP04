@@ -1,0 +1,564 @@
+
+html {
+	width: 100%;
+	font-size: 10px;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+.cover, .projects, .template, .help {
+	font-size: 2rem;
+}
+
+.cover {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto;
+	grid-row-gap: 15px;
+	padding: 120px 0;
+}
+
+.cover .head{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	align-self: center;
+}
+
+.services {
+	display: grid;
+	grid-template-columns: 1fr;
+	padding: 73.846px 0;
+	font-size: 1rem;
+}
+
+.service .description {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+	text-align: left;
+	padding: 20px 10px;
+}
+
+.services .head{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-row-gap: 15px;
+}
+
+.services .description .title {
+	align-self: center;
+	padding: 10px 0;
+}
+
+.services .icon i{
+	font-size: 30px;
+}
+
+.services .content {
+	display: grid;
+	grid-template-rows: repeat(6, 1fr);
+	grid-template-columns: 1fr;
+	grid-row-gap: 20px
+}
+
+.services .service {
+	display: grid;
+	grid-template-columns: 20% 80%;
+	grid-template-rows: 1fr;
+}
+
+.services .icon {
+	align-self: center;
+	justify-self: center;
+}
+
+.projects {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto;
+	padding: 48px 0;
+	grid-row-gap: 30px;
+}
+
+.projects .head {
+	grid-row-gap: 10px;
+}
+
+.projects .head, .projects .text{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto;
+	width: 80%;
+	justify-self:center;
+}
+
+.projects .pro {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(4, 1fr);
+}
+
+.projects .project {
+	display: grid;
+	grid-template-columns: 40% 60%;
+	grid-template-rows: 1fr;
+	width: 70%;
+	justify-self:center;
+	grid-row-gap: 30px;
+}
+
+.pro .img {
+	grid-column: 1 / span 2;
+	grid-row: 1;
+}
+
+.pro .details{
+	grid-column: 1;
+	grid-row: 1;
+	align-self: end;
+}
+
+.pro .name {
+	height: 40px;
+	width: 100%;
+	background-color: #343a40;
+	color: #fff;
+	opacity: 0.8;
+	font-weight: 600;
+}
+
+.pro .type {
+	text-transform: uppercase;
+}
+
+.pro .type .btn {
+	position: relative;
+	top: -10px;
+	width: 70%;
+	text-transform: uppercase;
+	background-color: #007bff;
+	color: #fff;
+	border:none;
+	margin-bottom: 20px;
+}
+
+.template {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto;
+	padding: 80px 0;
+	grid-row-gap: 30px;
+}
+
+.template .head{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-row-gap: 10px;
+}
+
+.template .cont1 {
+	display: grid;
+	grid-template-columns: 1fr ;
+	grid-template-rows: auto;
+}
+
+.template .slide-img {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-auto-rows: 1fr 1fr 1fr;
+	grid-row-gap: 15px;
+}
+
+.template .head, .template .slide-img, 
+.template .qoutes {
+	width: 80%;
+	justify-self: center;
+}
+
+.qoutes .content .text {
+	display: grid;
+	grid-template-rows: auto auto auto;
+	grid-template-columns: 1fr;
+}
+
+.text .icon {
+	display: grid;
+}
+
+.text .icon1 {
+	justify-self: start;
+}
+
+.text .icon2 {
+	justify-self: end;
+}
+
+.qoutes .author{
+	font-size: 16px;
+}
+
+.template .qoutes {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+}
+
+
+.team {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+	padding: 80px 0;
+	grid-row-gap: 30px;
+	font-size: 1fr;
+}
+
+.team .head{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.team .content {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	width: 65%;
+	justify-self: center;
+	grid-row-gap: 30px;
+	text-align: left;
+}
+
+.content .member {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(5, auto);
+	grid-row-gap: 10px;
+}
+
+.member .social {
+	display: grid;
+	grid-template-columns: repeat(5,1fr);
+	grid-template-rows: 1fr;
+}
+
+.help .content .head{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+.map {
+	display: grid;
+	width: 90%;
+	height: 300px;
+	justify-self:center;
+}
+
+.help {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+	padding: 80px 0;
+	grid-row-gap: 30px;
+}
+
+.help .content{
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: 1fr;
+	grid-row-gap: 30px;
+	padding: 80px 0;
+}
+
+.help .head {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: 1fr;
+	grid-row-gap: 10px;
+}
+
+.help .form form {
+	display: grid;
+	grid-template-rows: auto;
+	grid-template-columns: 1fr;
+	grid-row-gap: 10px;
+}
+
+.help .input input {
+	width: 70%;
+	height: 30px;
+	border-radius: 5px;
+	border:none;
+	text-indent:10px;
+}
+
+.help .submit {
+	border-radius: 10px;
+	width: 50%;
+	border:none;
+	height: 30px;
+}
+
+
+.hidden {
+	display: none;
+}
+
+
+img {
+	width: 100%;
+	height: 100%;
+}
+
+.template input {
+	display: none;
+}
+
+
+@media screen and (min-width: 768px){
+	
+	.hidden {
+		display: grid;
+	}
+
+	.projects .pro {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+
+
+	.labels {
+		display: grid;
+		grid-template-rows: 1fr;
+		width: 100%;
+		height: 20px;
+	}
+
+	.label  {
+		background-color: grey;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		justify-self:center;
+		align-self: center;
+	}
+
+	.template .slide {
+		width: 80%;
+		overflow-x: hidden;
+		justify-self:center;
+	}
+
+	.template .slide-img{
+	    grid-template-columns: repeat(6,1fr);
+	    grid-template-rows: 1fr;
+	    width: 200%;
+	    position: relative;
+	    animation-name: slide;
+    	animation-duration: 12s;
+	    position: relative;
+	    animation-direction: normal;
+	    animation-timing-function: ease;
+	    animation-iteration-count: infinite;
+	}
+
+	.template .cont1, .template .count2 {
+		display: none;
+	}
+
+	.qoutes .content .text {
+		grid-template-rows: 1fr;
+		grid-template-columns: 10% 80% 10%;
+	}
+
+	.team .content {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		width: 70%;
+	    justify-self: center;
+	    align-self: center;
+	    grid-row-gap: 50px;
+	    grid-column-gap: 50px;
+	}
+
+
+	.labels {
+		display: grid;
+		grid-template-columns: 4fr 1fr 1fr 4fr;
+		grid-template-rows: 1fr;
+	}
+
+	.labels .label:first-child{
+		grid-column: 2;
+	}
+
+	#qoute1:checked + .cont1,
+	 {
+		display: grid;
+	}
+
+	#qoute2:checked + .cont2,
+	 {
+		display: grid;
+	}
+
+	@keyframes slide {
+		0% {
+			left: 0;
+		}
+		50% {
+			left: -100%;
+		}
+		100% {
+			left: 0;
+		}
+	}
+
+	.__Tfont2{
+		font-size: 2em;
+	}
+
+}
+@media screen and (min-width: 992px){
+	.services .content {
+		grid-template-columns: 1fr 1fr 1fr ;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.projects .pro {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 1fr;
+	}
+
+	.team .content {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	.team .member:last-child {
+		grid-column: 2;
+	}
+
+	.help {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr;
+		width: 100%;
+	}
+
+	.map {
+		grid-column: 1 / span 2;
+		grid-row: 1;
+		height: 500px;
+	}
+
+	.help .content {
+		grid-column: 2;
+		grid-row: 1;
+		height: 50%;
+	    width: 65%;
+	    z-index: 99;
+	    align-self: center;
+	    justify-self: center;
+	}
+
+}
+
+
+.__fweight {
+	font-weight: 900;
+}
+
+.__fwhite {
+	color: white;
+}
+
+.__fpink{
+	color: #e83e8c;
+}
+
+.__fblue {
+	color: #007bff;
+}
+
+.__fgrey-dark{
+	color: #343a40;
+}
+
+.__fgrey {
+	color: #6c757d;
+}
+
+.__fOrange {
+	color: #ef7c46;
+}
+
+.__bgBlack {
+	background-color: #000;
+}
+
+.__bgpink{
+	background-color:  #e83e8c;
+}
+
+.__bgGrey-dark{
+	background-color: #343a40;
+}
+
+.__bgGrey {
+	background-color: #EFF1F4;
+}
+
+.__bgOrange {
+	background-color: #ef7c46;
+}
+
+.__bgBlue {
+	background-color: #007bff;
+}
+
+.__fWhite {
+	color: #fff;
+}
+
+.__font102{
+	font-size: 1.2em;
+}
+
+.__font108 {
+	font-size: 1.8em;
+}
+
+.__font105 {
+	font-size: 1.5em
+}
+
+.__font1036 {
+	font-size: 1.36em;
+}
+
+.__font105 {
+	font-size: 1.5em;
+}
+
+.__font09 {
+	font-size: 0.9em;
+}
+
+.__font08{
+	font-size: 0.8em;
+}
+
+.__font2 {
+	font-size: 2em;
+}
+
+.__font07 {
+	font-size: 0.7em;
+}
+.__font06 {
+	font-size: 0.6em;
+}
