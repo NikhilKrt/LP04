@@ -159,6 +159,10 @@ html {
 	grid-row-gap: 10px;
 }
 
+.template .slide {
+		display: grid;
+		}
+
 .template .cont1 {
 	display: grid;
 	grid-template-columns: 1fr ;
